@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTenBanAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imBanAn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/thembanan"
+                android:layout_below="@+id/txtTenBanAn"
+
+                />
+
+            <ImageView
+                android:id="@+id/imGoiMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/goimon"
+                android:layout_below="@+id/imBanAn"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/imThanhToan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thanhtoan"
+                android:layout_below="@+id/imBanAn"
+                android:layout_toRightOf="@+id/imGoiMon"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/imAnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imBanAn"
+                android:src="@drawable/anbutton"
+                android:layout_toRightOf="@+id/imThanhToan"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
