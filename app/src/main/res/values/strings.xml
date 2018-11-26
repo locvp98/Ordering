@@ -57,6 +57,13 @@
     <string name="loinull">Không được để trống</string>
     <string name="themthanhcong">Thêm thành công</string>
     <string name="themthatbai">Thêm thất bại</string>
+    <string name="thoat">Thoát</string>
+    <string name="Themthucdon">Thêm thực đơn</string>
+    <string name="themmonan">Thêm Thực đơn</string>
+    <string name="thucdon1">Thực đơn</string>
+    <string name="tenloai">Tên loại</string>
+    <string name="themloaithucdon">Thêm loại thực đơn</string>
+    <string name="mohinhanh">Chọn Hình ảnh</string>
 
 
 </resources>

@@ -46,8 +46,16 @@
             android:name=".account.DangKiActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionbar" />
-        <activity android:name=".manchinh.ThemBanAnActivity"
+        <activity
+            android:name=".manchinh.ThemBanAnActivity"
+            android:label="@string/thembanan"
+            android:theme="@style/PosUp" />
+        <activity
+            android:name=".manchinh.ThemThucDonActivity"
+            android:label="@string/themmonan" />
+        <activity android:name=".manchinh.ThemLoaithucDonActivity"
             android:theme="@style/PosUp"
+            android:label="@string/themloaithucdon"
             ></activity>
     </application>
 

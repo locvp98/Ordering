@@ -24,12 +24,14 @@ public interface goiham {
     String MONAN_TENMONAN = "tenmonan";
     String MONAN_GIATIEN = "giatien";
     String MONAN_MALOAI = "maloai";
+    String MONAN_HINHANH="hinhanh";
 
     String tbMONAN = " CREATE TABLE " + TB_MONAN + " ( " +
             MONAN_MAMONAN + " INTEGER primary key autoincrement, " +
             MONAN_TENMONAN + " TEXT, " +
             MONAN_MALOAI + " INTEGER, " +
-            MONAN_GIATIEN + " TEXT )";
+            MONAN_GIATIEN + " TEXT " +
+            MONAN_HINHANH+ " TEXT ) ";
 
 
     String TB_LOAIMONAN = "loaimonan";

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#ffa939</color>
     <color name="colorPrimaryDark">#c77a00</color>
-    <color name="colorAccent">#ffa939</color>
+    <color name="colorAccent">#fff</color>
     <color name="mautrang">#fff</color>
     <color name="mauden">#000</color>
 </resources>

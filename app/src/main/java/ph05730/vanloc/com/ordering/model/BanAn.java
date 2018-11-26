@@ -4,6 +4,16 @@ public class BanAn {
     private int mabanan;
     private String tenbanan;
 
+    public boolean isChonvitri() {
+        return chonvitri;
+    }
+
+    public void setChonvitri(boolean chonvitri) {
+        this.chonvitri = chonvitri;
+    }
+
+    private boolean chonvitri;
+
 
     public int getMabanan() {
         return mabanan;

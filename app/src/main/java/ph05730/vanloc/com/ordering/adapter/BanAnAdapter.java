@@ -61,6 +61,15 @@ public class BanAnAdapter extends BaseAdapter  implements View.OnClickListener {
         BanAn banAn = banAnList.get(position);
         viewHolder.txtTenBanAn.setText(banAn.getTenbanan());
 
+        //khi dc tao thi luu vitri
+        viewHolder.imBanAn.setTag(position);
+        if (banAnList.get(position).isChonvitri()){
+            duocchon();
+        }
+        else {
+            khongchon();
+        }
+
         viewHolder.imBanAn.setOnClickListener(this);
 
         return convertView;
@@ -75,17 +84,33 @@ public class BanAnAdapter extends BaseAdapter  implements View.OnClickListener {
 
     }
 
+    private void duocchon(){
+        viewHolder.imGoiMon.setVisibility(View.VISIBLE);
+        viewHolder.imThanhToan.setVisibility(View.VISIBLE);
+        viewHolder.imAnButton.setVisibility(View.VISIBLE);
+
+    }
+    private void khongchon(){
+        viewHolder.imAnButton.setVisibility(View.INVISIBLE);
+        viewHolder.imThanhToan.setVisibility(View.INVISIBLE);
+        viewHolder.imGoiMon.setVisibility(View.INVISIBLE);
+
+    }
+
     @Override
     public void onClick(View v) {
         int id = v.getId();
-      viewHolder= (ViewHolder) ((View)v.getParent()).getTag();
+        viewHolder= (ViewHolder) ((View)v.getParent()).getTag();
         switch (id) {
             case R.id.imBanAn:
-                viewHolder.imGoiMon.setVisibility(View.VISIBLE);
+          int vitri= (int) v.getTag();
+          banAnList.get(vitri).setChonvitri(true);
+              duocchon();
                 break;
 
         }
 
     }
+
 }
 

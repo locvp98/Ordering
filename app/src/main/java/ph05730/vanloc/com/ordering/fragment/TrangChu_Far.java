@@ -22,6 +22,7 @@ import ph05730.vanloc.com.ordering.R;
 import ph05730.vanloc.com.ordering.adapter.BanAnAdapter;
 import ph05730.vanloc.com.ordering.dao.BanAnDAO;
 import ph05730.vanloc.com.ordering.database.DBManager;
+import ph05730.vanloc.com.ordering.manchinh.ManChinhActivity;
 import ph05730.vanloc.com.ordering.manchinh.ThemBanAnActivity;
 import ph05730.vanloc.com.ordering.model.BanAn;
 
@@ -43,6 +44,8 @@ public class TrangChu_Far extends Fragment {
 
         banAnDAO=new BanAnDAO(new DBManager(getActivity()));
         hienthi();
+
+        ((ManChinhActivity)getActivity()).getSupportActionBar().setTitle(R.string.trangchu);
 
         return view;
     }
@@ -71,7 +74,6 @@ public class TrangChu_Far extends Fragment {
        switch (item.getItemId()){
            case R.id.thembanan:
                Intent itthembanan=new Intent(getActivity(),ThemBanAnActivity.class);
-
                startActivityForResult(itthembanan,REQUEST_CODE_THEM);
                break;
 

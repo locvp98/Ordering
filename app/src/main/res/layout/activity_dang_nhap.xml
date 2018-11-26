@@ -44,20 +44,20 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:inputType="textPassword"
-        android:textColorHint="@color/mautrang"
         android:id="@+id/edtmatkhau"
-        android:textColor="@color/mautrang"
-        android:background="@drawable/filematkhau"
-        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttaikhoan"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        android:hint="@string/matkhau"
+        android:background="@drawable/filematkhau"
         android:drawableLeft="@drawable/lock"
-        android:layout_below="@+id/edttaikhoan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:drawablePadding="10dp"
+        android:hint="@string/matkhau"
+        android:inputType="textPassword"
+        android:textColor="@color/mautrang"
+        android:textColorHint="@color/mautrang" />
 
     <Button
         android:textSize="18sp"
